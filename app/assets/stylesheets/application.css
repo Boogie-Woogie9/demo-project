@@ -1,15 +1,118 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.py-3 {
+  padding-top: 1rem !important;
+}
+/* .justify-content-center {
+  justify-content: center !important;
+} */
+.navbar-brand {
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+}
+.d-flex {
+  display: flex !important;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ol, ul {
+  padding-left: 2rem;
+}
+li {
+  padding-left: 5px;
+}
+#last {
+  padding-right: 10px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+header {
+  /* border-bottom: 1px solid rgb(173, 173, 173); */
+  border-bottom: 1px solid black ;
+  margin-top: -5px;
+  max-height: 70px;
+  background-color: none;
+  /* position: absolute; */
+}
+.footer {
+    bottom: 0;
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    width: 100%;
+    height: 7rem;  
+    /* margin-down: 0px;         */
+    position: fixed;
+    /* height: 60px;  */
+}
+#fluffy {
+  padding: 0px;
+  background-color:rgba(6, 1, 1, 0.477);
+}
+#image {
+  background-color: none;
+}
+.col-sm-3 {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black; 
+  border-radius: 1rem;
+  height: auto;
+  background-color: white; 
+  position: relative;        /*потом убрать обязаателньо!1!*/
+}
+.col-sm-8 {
+  margin: 1rem;
+  border: 1px solid black; 
+  margin-right: 3rem;
+}
+body {
+  font-family: var(--bs-font-sans-serif); 
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  -webkit-text-size-adjust: 100%;
+  background-image:
+  url("https://wallup.net/wp-content/uploads/2016/01/230664-minimalism-simple-simple_background-abstract.jpg");
+  background-size: cover;
+  margin-bottom: 60px;
+}
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
