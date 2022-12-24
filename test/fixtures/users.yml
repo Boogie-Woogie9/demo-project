@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  password: MyString
+  birth_date: 2022-12-24
+  test_passed: 1
+  avrg_rate: 1.5
+
+two:
+  email: MyString
+  password: MyString
+  birth_date: 2022-12-24
+  test_passed: 1
+  avrg_rate: 1.5
