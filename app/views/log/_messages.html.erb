@@ -1,0 +1,6 @@
+<% @msg.each do |message| %>
+    <p><%= message %></p>
+<% end %>
+<% if @msg.include?('This email is not registered') %>
+    <%= link_to "Do you want to register?", '/users/new' %>
+<% end %>

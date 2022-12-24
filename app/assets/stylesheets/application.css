@@ -71,7 +71,8 @@ header {
   border-radius: 1rem;
   height: auto;
   background-color: white; 
-  position: relative;        /*потом убрать обязаателньо!1!*/
+  position: relative;    
+  height: 630px;    /*потом убрать обязаателньо!1!*/
 }
 .col-sm-8 {
   margin: 1rem;
@@ -115,4 +116,35 @@ body {
   --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+#sign_up_form {
+  display: flex;
+  justify-content: center;
+  /* margin-left: 100px; */
+
+}
+
+.user {
+  position: absolute; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/000/540/953/small/Black_geometric_abstract_seamless_pattern_background_3.jpg");
+  background-color: none;
+  color: white;
+}
+
+.form_elem {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.commit_button {
+  padding-top: 1rem;
+  margin-left: 17rem;
+}
+.box{display:inline-block; width:100px; height:100px; margin-top:50px; text-align:center; padding-top:2em}
+.box.selected{
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, .5);
 }

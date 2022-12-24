@@ -1,2 +1,15 @@
-<h1>Log#sign_in</h1>
-<p>Find me in app/views/log/sign_in.html.erb</p>
+<%= form_with url: "/log/log", method: :post do |form| %>
+  <div class="email">
+    <%= form.label :email, "Email:" %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="password">
+    <%= form.label :password, "Password:" %>
+    <%= form.password_field :password %>
+  </div>
+  <%= form.submit "Log In" , class: 'btn btn-outline-primary', id: btn_input %>
+<% end %>
+
+<div id="msg"></div>
+
+<%= button_to 'На главную', root_path, class: 'btn btn-outline-primary', method: :get %>

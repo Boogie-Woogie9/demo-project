@@ -1,2 +1,5 @@
-<h1>Log#sign_out</h1>
-<p>Find me in app/views/log/sign_out.html.erb</p>
+<div id="session-active">
+    <h1>Вы действительно хотите выйти?</h1>
+    <%= button_to 'Вернуться на главную', root_path, class: 'btn btn-outline-primary', method: :get %>
+    <%= button_to 'Выйти', class: 'btn btn-outline-primary' '/log/log' %>
+</div>

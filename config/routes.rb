@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :users
+  root 'home#index'
   get 'log/sign_in'
   get 'log/sign_out'
-  root "home#index"
+  post 'log/log'
+  get 'users/new'
 end

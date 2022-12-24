@@ -1,0 +1,41 @@
+<div id="sign_up_form">
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %>Регистрация не произошла!:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form_elem">
+    <%= form.label :Почта, style: "display: block", id: "email" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="form_elem">
+    <%= form.label :Пароль, style: "display: block" %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="form_elem">
+    <%= form.label :"Введите пароль еще раз", style: "display: block" %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="form_elem">
+    <%= form.label :"Дата рождения", style: "display: block" %>
+    <input type="date" name="begin" 
+        placeholder="дд-мм-гггг" value=""
+        min="1922-01-01" max="2022-12-31">
+  </div>
+
+  <div class="commit_button">
+    <%= form.submit "Зарегистрироваться", class: 'btn btn-outline-danger', id: "log_button"%>
+  </div>
+<% end %>
+</div>

@@ -24,9 +24,5 @@ class User < ApplicationRecord
     }
   }
 
-  before_save :check_email
-
   private
-
-  def check_email; end
 end
