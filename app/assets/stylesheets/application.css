@@ -64,7 +64,8 @@ header {
 #image {
   background-color: none;
 }
-.col-sm-3 {
+#info_table {
+  position: fixed;
   margin: 1rem;
   padding: 1rem;
   border: 1px solid black; 
@@ -74,7 +75,7 @@ header {
   position: relative;    
   height: 630px;    /*потом убрать обязаателньо!1!*/
 }
-.col-sm-8 {
+#includer {
   margin: 1rem;
   border: 1px solid black; 
   margin-right: 3rem;
@@ -141,7 +142,7 @@ body {
   padding-left: 10px;
 }
 .commit_button {
-  padding-top: 1rem;
+  padding: 1rem;
   margin-left: 17rem;
 }
 .box{display:inline-block; width:100px; height:100px; margin-top:50px; text-align:center; padding-top:2em}

@@ -26,6 +26,11 @@ class User < ApplicationRecord
     }
   }
 
+  validates :password, {
+    presence: {
+      message: ': Вы пропустили дату рождения'
+    }
+  }
   before_save :check_email
 
   private

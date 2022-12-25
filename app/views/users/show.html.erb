@@ -2,9 +2,12 @@
 
 <%= render @user %>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
+<div class="row">
+  <div class="col-sm-3">
+    <%= link_to "Удалить учетную запись", @user, class: "btn btn-outline-danger",  method: :delete, :onclick => "return confirm('Вы уверены, что хотите удалить свою учетную запись?')" %>
+  </div>
+  <div class="col-sm-3">
+    <%= link_to "Редактировать профиль", edit_user_path(@user), class: "btn btn-dark" %>
+    <%# <%= link_to "Back to users", users_path %> 
+  </div>
 </div>

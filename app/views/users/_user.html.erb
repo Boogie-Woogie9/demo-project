@@ -1,13 +1,24 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
 
-  <p>
-    <strong>Password:</strong>
-    <%= user.password_digest %>
-  </p>
+<div id="<%= dom_id user %>">
+  <table class="table table-bordered border-dark table-dark table-hover table-active" id="table_info">
+    <thead>
+      <th colspan="2" style="text-align: center;">Данные учетной записи</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email:</td>
+        <td><%= user.email %></td>
+      </tr>
+      <tr>
+        <td>Пароль:</td>
+        <td><%= user.password_digest %></td>
+      </tr>
+      <tr>
+        <td>Дата рождения:</td>
+        <td><%= user.birth_date.strftime('%d %B %Yг') %></td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>
 

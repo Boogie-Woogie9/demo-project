@@ -29,13 +29,14 @@
 
   <div class="form_elem">
     <%= form.label :"Дата рождения", style: "display: block" %>
-    <input type="date" name="begin" 
+    <%# <input type="date" name="begin" 
         placeholder="дд-мм-гггг" value=""
-        min="1922-01-01" max="2022-12-31">
+        min="1922-01-01" max="2022-12-31"> %>
+    <%= form.date_field :birth_date %>
   </div>
 
   <div class="commit_button">
-    <%= form.submit "Зарегистрироваться", class: 'btn btn-outline-danger', id: "log_button"%>
+    <%= form.submit "Подтвердить", class: 'btn btn-outline-danger', id: "log_button"%>
   </div>
 <% end %>
 </div>
