@@ -26,7 +26,7 @@ class User < ApplicationRecord
     }
   }
 
-  validates :password, {
+  validates :birth_date, {
     presence: {
       message: ': Вы пропустили дату рождения'
     }

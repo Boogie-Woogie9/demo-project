@@ -7,7 +7,7 @@ class LogController < ApplicationController
       @msg << 'This email is not registered'
       return
     end
-    if user.authenticate(@password)
+    if User.authenticate(@password)
       session[:current_user_id] = user.id
       redirect_to root_path
     else
