@@ -1,17 +1,14 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Учетная запись была удалена!<br>
-    До новых встреч!</h1>
-  <img src="https://i.gifer.com/origin/ed/ed2c8e819e41a601637f492c80317ad0.gif" width="auto" height="200px" style="padding-left: 30rem;">
-
 <div id="users">
   <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+    <% if user.id == session[:current_user_id] %>
+      <%= render user %>
+      <div class="row">
+        <div class="col-sm-2"><%= link_to "Подробнее", user, class: "btn btn-outline-dark"%></div>
+        <div class="col-sm-4"><%= button_to 'На главную', root_path, method: :get, class: "btn btn-dark" %></div>
+      </div>
+    <% end %>
   <% end %>
 </div>
 
 <%# <%= button_to "New user", new_user_path, class:         для админа, есил придумаю как    %>
-<%= button_to 'На главную', root_path, method: :get, class: "btn btn-dark" %>
+

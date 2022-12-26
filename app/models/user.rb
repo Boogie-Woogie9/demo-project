@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# user validation
 class User < ApplicationRecord
   has_secure_password
 
@@ -29,9 +30,17 @@ class User < ApplicationRecord
   validates :birth_date, {
     presence: {
       message: ': Вы пропустили дату рождения'
-    }
+    },
+    date: { 
+      after: Time.now - 100.year, before: Time.now - 14.year,
+      message: ': Недопустимый возраст' }
   }
+
   before_save :check_email
+
+  # def self.authenticate(login, pass)
+  #   User.find(:first, conditions: [':email = ? AND :password = ?', login, pass])
+  # end
 
   private
 

@@ -82,6 +82,35 @@ header {
   padding: 1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.test_list {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--bs-dark);
+  margin-bottom: 10px;
+  color: var(--bs-white);
+  font-size: larger;
+}
+.test_ask {
+  color: var(--bs-white);
+  font-size:smaller;
+  background-color: var(--bs-dark);
+  padding: 0.5rem;
+  border-top: 1px solid black;
+}
+.answer_text {
+  font-size:small;
+  font-weight: 500;
+}
+/* .img {
+  display: block;
+  max-width:400px;
+  max-height:100px;
+  min-width:400px;
+  min-height:100px;
+  width: auto;
+  height: auto;
+} */
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   font-size: 1rem;

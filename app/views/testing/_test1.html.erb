@@ -1,0 +1,146 @@
+<script>
+  var count = 0
+  function counter(){
+    var count = 0
+    if(document.getElementById('defaultCheck1').checked) {
+        count++
+    } if(document.getElementById('defaultCheck8').checked) {
+        count++
+    } if(document.getElementById('defaultCheck10').checked) {
+        count++
+    } if(document.getElementById('defaultCheck15').checked) {
+        count++
+    }if(document.getElementById('defaultCheck19').checked) {
+        count++
+    } if(document.getElementById('defaultCheck22').checked) {
+        count++
+    }
+    document.getElementById('answer').value = count
+}
+</script>
+
+  <h2 style="color: white;">Статусы ответа HTTP</h2>
+<h5 style="color: white;">Задание: правильно ответить на все вопросы на знание кодов статуса ответа HTTP</h5>
+</br>
+<div class="test_ask">
+    <p class="answer_text">1) Код 301 означает...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">Запрошенный URL перемещен</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck2">
+    <label class="form-check-label" for="defaultCheck2">Требуется аутентификация</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck3">
+    <label class="form-check-label" for="defaultCheck3">Внутр. ошибка сервера</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck4">
+    <label class="form-check-label" for="defaultCheck4">URL не найден</label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">2) Код 200 значит, что...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck5">
+    <label class="form-check-label" for="defaultCheck5">Требуется аутентификация</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck6">
+    <label class="form-check-label" for="defaultCheck6">При передаче данных произошла ошибка</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck7">
+    <label class="form-check-label" for="defaultCheck7">Запрошенный URL перемещен</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck8">
+    <label class="form-check-label" for="defaultCheck8">Данные получены/переданы</label>
+  </div>
+</div> 
+<div class="col test_ask">
+    <p class="answer_text">3) Код 403 появляется, когда...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck9">
+    <label class="form-check-label" for="defaultCheck9">Запрошенный URL перемещен</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck10">
+    <label class="form-check-label" for="defaultCheck10">URL не доступен без аутентификации</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck11">
+    <label class="form-check-label" for="defaultCheck11">Требуется аутентификация</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck12">
+    <label class="form-check-label" for="defaultCheck12">При передаче данных произошла ошибка</label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">4) Код 500 появляется, когда...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck13">
+    <label class="form-check-label" for="defaultCheck13">Запрошенный URL перемещен</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck14">
+    <label class="form-check-label" for="defaultCheck14">URL недоступен без аутентификации</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck15">
+    <label class="form-check-label" for="defaultCheck15">Внутр. ошибка сервера</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck16">
+    <label class="form-check-label" for="defaultCheck16">Данные получены/переданы</label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">5) Код 404 появляется, когда...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck17">
+    <label class="form-check-label" for="defaultCheck17">Данные получены/переданы</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck18">
+    <label class="form-check-label" for="defaultCheck18">Внутр. ошибка сервера</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck19">
+    <label class="form-check-label" for="defaultCheck19">URL не найден</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck20">
+    <label class="form-check-label" for="defaultCheck20">Требуется аутентификация</label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">6) Код 401 обозначает...</p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck21">
+    <label class="form-check-label" for="defaultCheck21">Внутр. ошибка сервера</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck22">
+    <label class="form-check-label" for="defaultCheck22">Требуется аутентификация</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck23">
+    <label class="form-check-label" for="defaultCheck23">Запрошенный URL перемещен</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck24">
+    <label class="form-check-label" for="defaultCheck24">Данные получены/переданы</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+    <a class='btn btn-danger' style="margin-top: 1rem" onclick="counter()">Завершить тест</a>
+  </div>
+  <div class="col-6">
+    <input type="text" style="margin-top: 1rem" id="answer"></input>
+  </div>
+</div>

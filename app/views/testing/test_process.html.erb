@@ -1,0 +1,9 @@
+<script>
+  if(document.getElementById('gender_Male').checked) {
+} else if(document.getElementById('gender_Female').checked) {
+}
+</script>
+<% test = params[:num] %>
+<%=render "testing/test1" if test == 'test1'%>
+<%=render "testing/test2" if test == 'test2'%>
+<%=render "testing/test3" if test == 'test3'%>

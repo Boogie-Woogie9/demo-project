@@ -3,29 +3,27 @@
 class LogController < ApplicationController
   before_action :set_params, only: %i[sign_in log]
   def sign_in
-    if User.find_by(email: @email).nil?
-      @msg << 'This email is not registered'
+    user = User.find_by(email: @email)
+    if user.nil?
+      @msg << 'Аккаунта с таким логином не существует!'
       return
     end
-    if User.authenticate(@password)
+    if user.authenticate(@password)
       session[:current_user_id] = user.id
       redirect_to root_path
     else
-      @msg << 'Incorrect password!'
+      @msg << 'Неверный пароль!'
     end
-    user = User.find_by(email: @email)
-    if user.nil? && user.authenticate(@password)
-      @msg << 'Incorrect password!'
-    else
-      session[:current_user_id] = user.id
-      redirect_to root_path
-    end
+  end
+
+  def on_reg
+    session[:current_user_id] = user.id if @commit == 'Подтвердить'
   end
 
   def sign_out; end
 
   def log
-    if @commit == 'Log In'
+    if @commit == 'Войти'
       sign_in
     else
       session[:current_user_id] = 0

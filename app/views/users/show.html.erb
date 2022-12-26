@@ -1,6 +1,12 @@
-<p style="color: green"><%= notice %></p>
+  <p style="color: green"><%= notice %></p>
 
-<%= render @user %>
+<% if @user.nil? %>
+  <h1>Учетная запись была удалена!<br>
+      До новых встреч!</h1>
+    <img src="https://i.gifer.com/origin/ed/ed2c8e819e41a601637f492c80317ad0.gif" width="auto" height="200px" style="padding-left: 30rem;">
+<% end%>
+
+<%= render @user if !@user.nil? %>
 
 <div class="row">
   <div class="col-sm-3">
@@ -9,5 +15,8 @@
   <div class="col-sm-3">
     <%= link_to "Редактировать профиль", edit_user_path(@user), class: "btn btn-dark" %>
     <%# <%= link_to "Back to users", users_path %> 
+  </div>
+  <div class="col-sm-3">
+    <%= link_to "На главную", "/", class: "btn btn-dark" %>
   </div>
 </div>

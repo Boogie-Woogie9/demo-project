@@ -1,0 +1,34 @@
+<div class="col-6">
+  <h1>Список тестирований</h1>
+  <p>На этой странице вы можете выбрать тестирование, которое хотите пройти</p>
+</div>
+
+<div class="col-8">
+  <div class="row test_list">
+    <div class="col-sm-1">1
+    </div>
+    <div class="col-sm-8">Статусы ответа HTTP
+    </div>
+    <div class="col">
+      <%= button_to 'Пройти тест', {:controller => "testing", :action => "test_choose", :num => 'test1'} , :method => :post, class: 'btn btn-danger' %>
+    </div>
+  </div>
+  <div class="row test_list">
+    <div class="col-sm-1">2
+    </div>
+    <div class="col-sm-8">Программирование на Ruby
+    </div>
+    <div class="col">
+      <%= button_to 'Пройти тест', {:controller => "testing", :action => "test_choose", :num => 'test2'} , :method => :post,  class: 'btn btn-danger'%>
+    </div>
+  </div>
+  <div class="row test_list">
+    <div class="col-sm-1">2
+    </div>
+    <div class="col-sm-8"> 
+    </div>
+    <div class="col">
+      <%= button_to 'Пройти тест', {:controller => "testing", :action => "test_choose", :num => 'test3'} , :method => :post,  class: 'btn btn-danger'%>
+    </div>
+  </div>
+</div>
