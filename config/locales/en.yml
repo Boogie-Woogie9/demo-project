@@ -1,122 +1,77 @@
 en:
-  home:
-    index:
-      welcome: Welcome to Ruby Test Platfrotm!
-      info1: >-
-        This project was designed to test the knowledge of users in the field of
-        software development in Ruby! On the site you will be able to take tests
-        on knowledge of various aspects of the popular web programming language,
-        as well as compete with other users.
-      info2: >-
-        In the basement of the site you can find links to various resources that
-        will be useful for both beginners and experienced users.
-      ruby_info: >-
-        Ruby is a carefully balanced language. Its creator Yukihiro Matsumoto
-        (also known as “Matz”), combined parts of his favorite languages (Perl,
-        Smalltalk, Eiffel, Ada and Lisp) to form a new language in which the
-        functional programming paradigm is balanced by the principles of
-        imperative programming. He often repeated that he was trying to make
-        Ruby a natural, but not simple language that reflects life.
-      quote1: 'Based on this, he adds:'
-      quote2: >-
-        Ruby is simple in appearance, but very complex inside, like a human
-        body.
-  layouts:
-    application:
-      welcome: Welcome to Ruby Test Platfrotm!
-      main: Home
-      phone: Phone
-      send_email: Send email
-      to_tests: To tests
-      exit: Exit
-      contacts: Contacts
-      sign_up: Sign Up
-      best_of_the_best: Best of the Best!
-      top: Top
-      name: Name
-      scores: Scores
-      useful_links: 'Useful links:'
-      guide: for eduction
-      login: Log In
-      confirmexit: Are you sure to exit?
-      english: UK
-      russian: RU
-  log:
-    _messages:
-      acc_not_exists: There is no account with this username!
-    sign_in:
-      back: Back
-      sign_up: Log In
-      passw: 'Password:'
-      login: Log In
-    sign_out:
-      home: Home
-      exit: Exit
-      sure: Are you sure to exit?
-  testing:
-    _test1:
-      response_codes: HTTP response codes
-      create_acc: Create an account?
-      task1: >-
-        Task: correctly answer all questions on knowledge of HTTP response
-        status codes
-      code301: Code 301 means...
-      url_moved: Requested URL moved
-      auth_req: Authentication required
-      serv_in: Ext. server error
-      url_lost: URL not found
-      data_get: Data received/transmitted
-      get_error: An error occurred while transmitting data
-      url_blocked: The URL is not accessible without authentication
-      complete: Complete test
-      code200: Code 200 means that...
-      code403: Code 403 appears when...
-      code500: The 500 code appears when...
-      code404: The 404 code appears when...
-      code401: Code 401 stands for...
-      english: UK
-      russian: RU
-    index:
-      ruby_coding: Ruby Programming
-      test_list: List of tests
-      onthispage: On this page you can choose the testing you want to take
-      statuscode: HTTP response Statuses
-      start: Go to test
-  users:
-    index:
-      edit: More detailed
-      home: Home
-      acc_log: Account info
-    _form:
-      reg_cancel: 'Registration failed!:'
-      submit: Submit
-      birth: Date of birth
-      again: Enter the password again
-      pass: Password
-      email: email
-    _user:
-      birth: Date of birth
-      pass: Password
-      email: email
-    deleted:
-      deleted: The account has been deleted!
-      see_u: See you soon!
-    show:
-      deleted: The account has been deleted!
-      see_u: See you soon!
-      delete_acc: Delete an account
-      edit_acc: Edit Profile
-      home: Home
-      confirm: Are you sure you want to delete your account?
-    new:
-      fill_form: Please fill out the form below
-      reg: Sign Up
-  models:
-    user:
-      emailempty: ': You missed the email field'
-      alreadyexists: ': This email is already taken'
-      invalidemail: ': Invalid email address'
-      passempty: ': You missed the password field'
-      minlen: ': You missed the password field'
-      birthempty: ': You missed the date of birth'
-      young: ': Unacceptable age'
+  welcome: "Welcome to Ruby Test Platform!"
+  info1: "This project was designed to test the knowledge of users in the field of software development in Ruby! On the site you will be able to take tests on knowledge of various aspects of the popular web programming language, as well as compete with other users."
+  info2: "In the basement of the site you can find links to various resources that will be useful for both beginners and experienced users."
+  ruby_info: "Ruby is a carefully balanced language. Its creator Yukihiro Matsumoto (also known as “Matz”), combined parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada and Lisp) to form a new language in which the functional programming paradigm is balanced by the principles of
+  imperative programming. He often repeated that he was trying to make Ruby a natural, but not simple language that reflects life."
+  quote1: 'Based on this, he adds:'
+  quote2: "Ruby is simple in appearance, but very complex inside, like a human body."
+  main: 'Home'
+  phone: 'Phone'
+  send_email: 'Send email'
+  to_tests: 'To tests'
+  exit: 'Exit'
+  contacts: 'Contacts'
+  sign_up: 'Sign Up'
+  best_of_the_best: 'Best of the Best!'
+  top: 'Top'
+  name: 'Name'
+  scores: 'Scores'
+  useful_links: 'Useful links:'
+  guide: 'for eduction'
+  login: 'Log In'
+  confirmexit: 'Are you sure to exit?'
+  english: 'UK'
+  russian: 'RU'
+  acc_not_exists: 'There is no account with this username!'
+  back: 'Back'
+  sign_up: 'Sign Up'
+  passw: 'Password:'
+  home: 'Home'
+  sure: 'Do you want to exit?'
+  response_codes: 'HTTP response codes'
+  create_acc: 'Create an account?'
+  Task: 'correctly answer all questions on knowledge of HTTP response status codes'
+  code301: 'Code 301 means...'
+  url_moved: 'Requested URL moved'
+  auth_req: 'Authentication required'
+  serv_in: 'Ext. server error'
+  url_lost: 'URL not found'
+  data_get: 'Data received/transmitted'
+  get_error: 'An error occurred while transmitting data'
+  url_blocked: 'The URL is not accessible without authentication'
+  complete: 'Complete test'
+  code200: 'Code 200 means that...'
+  code403: 'Code 403 appears when...'
+  code500: 'The 500 code appears when...'
+  code404: 'The 404 code appears when...'
+  code401: 'Code 401 stands for...'
+  ruby_coding: 'Ruby Programming'
+  test_list: 'List of tests'
+  onthispage: 'On this page you can choose the testing you want to take'
+  statuscode: 'HTTP response Statuses'
+  start: 'Go to test'
+  edit: 'More detailed'
+  home: 'Home'
+  acc_log: 'Account info'
+  reg_cancel: 'Registration failed!:'
+  submit: 'Submit'
+  birth: 'Date of birth'
+  again: 'Enter the password again'
+  pass: 'Password'
+  email: 'email'
+  deleted: 'The account has been deleted!'
+  see_u: See you soon!
+  delete_acc: 'Delete an account'
+  edit_acc: 'Edit Profile'
+  home: 'Home'
+  confirm: 'Are you sure you want to delete your account?'
+  fill_form: "Please fill out the form below"
+  reg: "Sign Up"
+  emailempty: ': You missed the email field'
+  alreadyexists: ': This email is already taken'
+  invalidemail: ': Invalid email address'
+  passempty: ': You missed the password field'
+  minlen: ': You missed the password field'
+  birthempty: ': You missed the date of birth'
+  young: ': Unacceptable age'

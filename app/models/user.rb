@@ -31,9 +31,10 @@ class User < ApplicationRecord
     presence: {
       message: ': Вы пропустили дату рождения'
     },
-    date: { 
+    date: {
       after: Time.now - 100.year, before: Time.now - 14.year,
-      message: ': Недопустимый возраст' }
+      message: ': Недопустимый возраст'
+    }
   }
 
   before_save :check_email

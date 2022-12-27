@@ -2,19 +2,19 @@
 <div id="<%= dom_id user %>">
   <table class="table table-bordered border-dark table-dark table-hover table-active" id="table_info">
     <thead>
-      <th colspan="2" style="text-align: center;"><%=t '.acc_log'%></th>
+      <th colspan="2" style="text-align: center;"><%=t(:acc_log)%></th>
     </thead>
     <tbody>
       <tr>
-        <td><%=t '.email'%>:</td>
+        <td><%=t(:email)%>:</td>
         <td><%= user.email %></td>
       </tr>
       <tr>
-        <td><%=t '.pass'%>:</td>
+        <td><%=t(:pass)%>:</td>
         <td><%= user.password_digest %></td>
       </tr>
       <tr>
-        <td><%=t '.birth'%>:</td>
+        <td><%=t(:birth)%>:</td>
         <td><%= user.birth_date.strftime('%d %B %Yг') %></td>
       </tr>
     </tbody>

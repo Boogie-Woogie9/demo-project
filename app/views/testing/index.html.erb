@@ -1,25 +1,25 @@
 <div class="col-6">
-  <h1><%=t '.test_list'%></h1>
-  <p><%=t '.onthispage'%></p>
+  <h1><%=t(:test_list)%></h1>
+  <p><%=t(:onthispage)%></p>
 </div>
 
 <div class="col-8">
   <div class="row test_list">
     <div class="col-sm-1">1
     </div>
-    <div class="col-sm-8"><%=t '.statuscode'%>
+    <div class="col-sm-8"><%=t(:statuscode)%>
     </div>
     <div class="col">
-      <%= button_to t('.start'), {:controller => "testing", :action => "test_choose", :num => 'test1'} , :method => :post, class: 'btn btn-danger' %>
+      <%= button_to t(:start), {:controller => "testing", :action => "test_choose", :num => 'test1'} , :method => :post, class: 'btn btn-danger' %>
     </div>
   </div>
   <div class="row test_list">
     <div class="col-sm-1">2
     </div>
-    <div class="col-sm-8"><%=t '.ruby_coding'%>
+    <div class="col-sm-8"><%=t(:ruby_coding)%>
     </div>
     <div class="col">
-      <%= button_to t('.start'), {:controller => "testing", :action => "test_choose", :num => 'test2'} , :method => :post,  class: 'btn btn-danger'%>
+      <%= button_to t(:start), {:controller => "testing", :action => "test_choose", :num => 'test2'} , :method => :post,  class: 'btn btn-danger'%>
     </div>
   </div>
   <div class="row test_list">
@@ -28,7 +28,7 @@
     <div class="col-sm-8"> 
     </div>
     <div class="col">
-      <%= button_to t('.start'), {:controller => "testing", :action => "test_choose", :num => 'test3'} , :method => :post,  class: 'btn btn-danger'%>
+      <%= button_to t(:start), {:controller => "testing", :action => "test_choose", :num => 'test3'} , :method => :post,  class: 'btn btn-danger'%>
     </div>
   </div>
 </div>

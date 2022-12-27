@@ -1,6 +1,6 @@
 <% @msg.each do |message| %>
     <p><%= message %></p>
 <% end %>
-<% if @msg.include?("#{t'.acc_not_exists'}") %>
-    <%= link_to t('.create_acc'), '/users/new' %>
+<% if @msg.include?("#{t(:acc_not_exists)}") %>
+    <%= link_to t(:create_acc), '/users/new' %>
 <% end %>
