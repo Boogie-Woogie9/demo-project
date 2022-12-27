@@ -2,7 +2,7 @@
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(user.errors.count, "error") %>Регистрация не произошла!:</h2>
+      <h2><%= pluralize(user.errors.count, "error") %><%=t '.reg_cancel'%></h2>
 
       <ul>
         <% user.errors.each do |error| %>
@@ -13,26 +13,26 @@
   <% end %>
 
   <div class="form_elem">
-    <%= form.label :Почта, style: "display: block" %>
+    <%= form.label :t('.email'), style: "display: block" %>
     <%= form.text_field :email, id: "email"%>
   </div>
 
   <div class="form_elem">
-    <%= form.label :Пароль, style: "display: block" %>
+    <%= form.label :t('.pass'), style: "display: block" %>
     <%= form.password_field :password %>
   </div>
 
   <div class="form_elem">
-    <%= form.label :"Введите пароль еще раз", style: "display: block" %>
+    <%= form.label :t('.again'), style: "display: block" %>
     <%= form.password_field :password_confirmation %>
   </div>
 
   <div class="form_elem">
-    <%= form.label :"Дата рождения", style: "display: block" %>
+    <%= form.label :t('.birth'), style: "display: block" %>
     <%= form.date_field :birth_date %>
   </div>
   <div class="commit_button">
-    <%= form.submit "Подтвердить", class: 'btn btn-danger', :onclick => "on_reg", id: "log_button"%>
+    <%= form.submit t('.submit'), class: 'btn btn-danger', :onclick => "on_reg", id: "log_button"%>
   </div>
 <% end %>
 </div>

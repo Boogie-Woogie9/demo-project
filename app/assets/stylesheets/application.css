@@ -130,6 +130,12 @@ body {
   margin-right: auto;
   text-align: center;
 }
+#tutor {
+  height: 600px;
+  border: 5px solid black;
+  width: 600px;
+
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

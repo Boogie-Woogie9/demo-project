@@ -1,20 +1,20 @@
 <div class="user" style="padding: 3rem;">
-  <h1 style="text-align: center; padding-top: 10px;">Вход</h1>
+  <h1 style="text-align: center; padding-top: 10px;"><%=t '.login'%></h1>
   <%= form_with url: "/log/log", method: :post do |form| %>
     <div class="form_elem email">
       <%= form.label :email, "Email:", style: "display: block" %>
       <%= form.text_field :email %>
     </div>
     <div class="form_elem password">
-      <%= form.label :password, "Пароль:", style: "display: block" %>
+      <%= form.label :password, <%=t '.passw'%>, style: "display: block" %>
       <%= form.password_field :password %>
     </div>
     <div class="row">
         <div class="col-6" style="padding: 10px; padding-left: 25px;">
-          <%= form.submit "Войти" , class: 'btn btn-danger', id: "btn_input" %>
+          <%= form.submit <%=t '.sign_up'%> , class: 'btn btn-danger', id: "btn_input" %>
         </div>
         <div class="col-6" style="padding: 10px; padding-left: 25px;">
-          <%= button_to 'Назад', root_path, class: 'btn btn-outline-light', method: :get %>
+          <%= button_to <%=t '.back'%>, root_path, class: 'btn btn-outline-light', method: :get %>
         </div>
         <div id="msg"></div>
     </div>  

@@ -16,7 +16,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
-// = link_tree ../../codemirror.js
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
