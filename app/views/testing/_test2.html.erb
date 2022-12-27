@@ -1,7 +1,37 @@
+<%# <script src="Testing_plarform/lib/codemirror/lib/"></script>
+<link href="Testing_plarform/lib/codemirror/lib/codemirror.css" rel="stylesheet"/>
+<script src="Testing_plarform/lib/codemirror/mode/xml/xml.js"></script>
+<link href="Testing_plarform/lib/codemirror/theme/colorforth.css"/>
+<%=javascript_include_tag 'codemirror.js'%>
+<%= stylesheet_link_tag 'codemirror.css' %>
 
-  <h2 style="color: white;">Статусы ответа HTTP</h2>
-<h5 style="color: white;">Задание: правильно ответить на все вопросы на знание кодов статуса ответа HTTP</h5>
-<div class="input-group">
-  <span class="input-group-text">Напишите здесь код</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
+<p>Задание №1: Вычислите сумму чисел от 1 до 10:</p>
+<div class="input-group col">
+  <span class="input-group-text">Ваш ответ</span>
+  <textarea style="width: 400px; height: 70px;"></textarea>
 </div>
+<br>
+<p>Задание №1: Выведите сумму чисел от 1 до 10:</p>
+<div class="input-group">
+  <span class="input-group-text">Ваш ответ</span>
+  <textarea class="codemirror-textarea" style="width: 400px; height: 70px;"></textarea>
+</div>
+<br>
+<p>Задание №1: Выведите сумму чисел от 1 до 10:</p>
+<div class="input-group">
+  <span class="input-group-text">Ваш ответ</span>
+  <textarea class="codemirror-textarea" style="width: 400px; height: 70px;"></textarea>
+</div>
+<br>
+
+
+
+<%# 
+<textarea id="editor"><p>I'm a paragraph</p></textarea>
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
+    mode: 'xml',
+    theme: 'dracula',
+    lineNumber: true
+  });
+</script> %>
