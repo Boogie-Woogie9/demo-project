@@ -22,13 +22,12 @@
           <div class="btn-group btn-locale">
           <% I18n.available_locales.each do |locale| %>
           <button class="btn btn-danger btn-sm">
-          <%= link_to t(locale), url_for(locale: locale), class: "link-light" %>
+          <%= link_to t(locale), url_for(locale: locale), class: "link-light", id: 'sign-up-btn'%>
           </button>
         <% end %>
         </div>
         </div>
           </li>
-          <li class="navbar-brand" id="image"><img src="Testing_plarform/app/assets/images/ruby_plain_logo_icon_146361.png" style="background-color:none;" alt="Ruby Test Platform" width="auto" height="40px"></a></li>
           <li class="nav-item"><a href="/ru" class="nav-link link-light"><%=t(:main)%></a></li>
           <li>
             <a class="nav-link link-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><%=t(:contacts)%></a>
@@ -37,10 +36,10 @@
                 <li><a class="dropdown-item" href="mailto:evseenkov.2003@mail.ru"><%=t(:send_email)%></a></li>
               </ul>
           </li>
-          <li class="nav-item"><a href="/inline_pdf/Instruction.pdf" class="nav-link link-light" id="FAQs">FAQs</a></li>
+          <li class="nav-item"><a href="https://disk.yandex.ru/i/uxbTdmoBqpFkJw" class="nav-link link-light" id="FAQs">FAQs</a></li>
           <% unless User.find_by_id(session[:current_user_id]).nil? %>
             <li class="nav-item" style="padding-right: 10px"><a href="/testing/index" class="btn btn-dark" id="to_tests"><%=t(:to_tests)%></a></li>
-            <%= button_to t('.exit'), "/log/log", class: "btn btn-dark", :onclick => "return confirm(#{t(:confirmexit)});"%>
+            <%= button_to t(:logout), "/log/log", class: "btn btn-dark", :onclick => "return confirm(#{t(:confirmexit)});"%>
             <%user = User.find_by_id(session[:current_user_id])%>
             <li class="nav-item"><a href="/users/<% user %>" class="link link-light" style="padding: 5px; margin-right: 5px; margin-left: 10px;"><%= user.email %></a></li>
             <div style="padding: 10px; color: white;"></div>
@@ -62,7 +61,7 @@
            <table id="top_rate" class="table table-dark table-striped">
             <tr><th colspan="3"><%=t(:best_of_the_best)%></th></tr>
             <tr><td><%=t(:top)%></td><td><%=t(:name)%></td><td><%=t(:scores)%></td></tr>
-             <% @users = @users.sort_by { |user| user.rating } %>
+             <% @users = @users.sort_by { |user| -user.rating } %>
             <%@users[0..4].each_with_index do |user, index|%>
             <tr>
               <td><%=index+1%></td><td><%=user.email%></td><td><%=user.rating%></td>
@@ -70,38 +69,38 @@
             <% end %>
            </table> 
         
-        <div id="carouselExampleInterval" class="carousel slide img" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="5000">
-      <img src="https://i.pinimg.com/736x/31/61/a1/3161a1a58a4476182f8bd9dd8362e032.jpg" class="d-block w-100" alt="..." width="auto" height="270px">
-    </div>
-    <div class="carousel-item" data-bs-interval="5000">
-      <img src="https://bizflyportal.mediacdn.vn/thumb_wm/1000,100/bizflyportal/images/rub16161412917031.png" class="d-block w-100" alt="..." width="auto" height="270px  ">
-    </div>
-    <div class="carousel-item">
-      <img src="https://www.reliablesoft.net/wp-content/uploads/2019/06/website-marketing-strategy.jpg" class="d-block w-100" width="auto" height="270px">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+          <div id="carouselExampleInterval" class="carousel slide img" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://i.pinimg.com/736x/31/61/a1/3161a1a58a4476182f8bd9dd8362e032.jpg" class="d-block w-100" alt="..." width="auto" height="270px">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://bizflyportal.mediacdn.vn/thumb_wm/1000,100/bizflyportal/images/rub16161412917031.png" class="d-block w-100" alt="..." width="auto" height="270px  ">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.reliablesoft.net/wp-content/uploads/2019/06/website-marketing-strategy.jpg" class="d-block w-100" width="auto" height="270px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
   </main>
     <div class="footer">
       <div class="row">
         <div class="col-sm-4">
           <img src="https://www.shutterstock.com/image-vector/modern-luxury-ruby-logo-design-260nw-2166789343.jpg" width="auto" height="130px">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <ul>
-            <p><%=t(:useful_links)%></p>
+            <li><p style="color: white;"><%=t(:useful_links)%></p></li>
             <li><a href="https://www.ruby-lang.org/ru/" class="link-light">RubyOrg</a></li>
             <li><a href="https://habr.com/ru/post/206416/" class="link-light">Ruby: cheatsheet <%=t(:guide)%></a></li>
             <li><a href="https://guides.rubyonrails.org/" class="link-light">Ruby Guides</a></li>

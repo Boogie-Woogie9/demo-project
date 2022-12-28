@@ -1,10 +1,10 @@
-<div class="col-6">
+<div class="col">
   <h1><%=t(:test_list)%></h1>
-  <p><%=t(:onthispage)%></p>
+  <p style="font-size: x-large;"><%=t(:onthispage)%></p>
 </div>
 
 <div class="col-8">
-  <div class="row test_list">
+  <div class="row test_list" onmouseover="lighten();">
     <div class="col-sm-1">1
     </div>
     <div class="col-sm-8"><%=t(:statuscode)%>
@@ -20,15 +20,6 @@
     </div>
     <div class="col">
       <%= button_to t(:start), {:controller => "testing", :action => "test_choose", :num => 'test2'} , :method => :post,  class: 'btn btn-danger'%>
-    </div>
-  </div>
-  <div class="row test_list">
-    <div class="col-sm-1">2
-    </div>
-    <div class="col-sm-8"> 
-    </div>
-    <div class="col">
-      <%= button_to t(:start), {:controller => "testing", :action => "test_choose", :num => 'test3'} , :method => :post,  class: 'btn btn-danger'%>
     </div>
   </div>
 </div>

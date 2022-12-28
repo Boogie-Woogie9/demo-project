@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# log controller
 class LogController < ApplicationController
   before_action :set_params, only: %i[sign_in log]
   def sign_in
@@ -11,23 +12,23 @@ class LogController < ApplicationController
     if user.authenticate(@password)
       session[:current_user_id] = user.id
       redirect_to root_path
+      return
     else
       @msg << 'Неверный пароль!'
     end
   end
 
-  def on_reg
-    session[:current_user_id] = user.id if @commit == 'Подтвердить'
-  end
-
   def sign_out; end
 
   def log
-    if @commit == 'Войти'
+    if @commit == t(:login)
       sign_in
+      # redirect_to(root_path) and return
     else
       session[:current_user_id] = 0
+      redirect_to root_path
     end
+    
   end
 
   private

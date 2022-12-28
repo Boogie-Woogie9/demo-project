@@ -1,0 +1,160 @@
+<script>
+  document.getElementById('answer').disabled = true;
+  var count = 0
+  function counter(){
+    var count = 0
+    if(document.getElementById('defaultCheck1').checked) {
+        count++
+    } if(document.getElementById('defaultCheck8').checked) {
+        count++
+    } if(document.getElementById('defaultCheck10').checked) {
+        count++
+    } if(document.getElementById('defaultCheck15').checked) {
+        count++
+    }if(document.getElementById('defaultCheck19').checked) {
+        count++
+    } if(document.getElementById('defaultCheck22').checked) {
+        count++
+    }
+    document.getElementById('answer').value = count
+}
+
+  function getValue() {
+    return document.getElementById("answer").value;
+  }
+  </script>
+
+  <h2 style="color: white;"><%=%></h2>
+<h5 style="color: white;"><%=t(:task1)%></h5>
+</br>
+<div class="test_ask">
+    <p class="answer_text">1) <%=t(:code301)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1"><%=t(:url_moved)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck2">
+    <label class="form-check-label" for="defaultCheck2"><%=t(:auth_req)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck3">
+    <label class="form-check-label" for="defaultCheck3"><%=t(:serv_in)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="one" id="defaultCheck4">
+    <label class="form-check-label" for="defaultCheck4"><%=t(:url_lost)%></label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">2) <%=t(:code200)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck5">
+    <label class="form-check-label" for="defaultCheck5"><%=t(:auth_req)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck6">
+    <label class="form-check-label" for="defaultCheck6"><%=t(:get_error)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck7">
+    <label class="form-check-label" for="defaultCheck7"><%=t(:url_moved)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="two" id="defaultCheck8">
+    <label class="form-check-label" for="defaultCheck8"><%=t(:data_get)%></label>
+  </div>
+</div> 
+<div class="col test_ask">
+    <p class="answer_text">3) <%=t(:code403)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck9">
+    <label class="form-check-label" for="defaultCheck9"><%=t(:url_moved)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck10">
+    <label class="form-check-label" for="defaultCheck10"><%=t(:url_blocked)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck11">
+    <label class="form-check-label" for="defaultCheck11"><%=t(:auth_req)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="three" id="defaultCheck12">
+    <label class="form-check-label" for="defaultCheck12"><%=t(:get_error) %></label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">4) <%=t(:code500)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck13">
+    <label class="form-check-label" for="defaultCheck13"><%=t(:url_moved)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck14">
+    <label class="form-check-label" for="defaultCheck14"><%=t(:url_blocked)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck15">
+    <label class="form-check-label" for="defaultCheck15"><%=t(:serv_in)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="four" id="defaultCheck16">
+    <label class="form-check-label" for="defaultCheck16"><%=t(:data_get)%></label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">5) <%=t(:code404)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck17">
+    <label class="form-check-label" for="defaultCheck17"><%=t(:data_get)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck18">
+    <label class="form-check-label" for="defaultCheck18"><%=t(:serv_in)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck19">
+    <label class="form-check-label" for="defaultCheck19"><%=t(:url_lost)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="five" id="defaultCheck20">
+    <label class="form-check-label" for="defaultCheck20"><%=t(:auth_req)%></label>
+  </div>
+</div>
+<div class="col test_ask">
+    <p class="answer_text">6) <%=t(:code401)%></p>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck21">
+    <label class="form-check-label" for="defaultCheck21"><%=t(:serv_in)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck22">
+    <label class="form-check-label" for="defaultCheck22"><%=t(:auth_req)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck23">
+    <label class="form-check-label" for="defaultCheck23"><%=t(:url_moved)%></label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="six" id="defaultCheck24">
+    <label class="form-check-label" for="defaultCheck24"><%=t(:data_get)%></label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+    <a class='btn btn-danger' style="margin-top: 1rem" onclick="counter()"><%=t(:complete)%></a>
+    <%= button_to "Получить очки", {:controller => "testing", :action => "set_score"} , :method => :post, class: 'btn btn-success' %>
+  </div>
+  <div class="col-6">
+    <input type="text" style="margin-top: 1rem" id="answer"></input>
+  </div>
+</div>
+
+<%# <script>
+  function change() {
+    var tr = document.getElementById("top_rate").getElementsByTagName("td");
+    td[0].innerHTML = 1;
+    td[1].innerHTML = 1;
+  }
+</script> %>

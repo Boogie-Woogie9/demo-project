@@ -2,8 +2,7 @@ en:
   welcome: "Welcome to Ruby Test Platform!"
   info1: "This project was designed to test the knowledge of users in the field of software development in Ruby! On the site you will be able to take tests on knowledge of various aspects of the popular web programming language, as well as compete with other users."
   info2: "In the basement of the site you can find links to various resources that will be useful for both beginners and experienced users."
-  ruby_info: "Ruby is a carefully balanced language. Its creator Yukihiro Matsumoto (also known as “Matz”), combined parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada and Lisp) to form a new language in which the functional programming paradigm is balanced by the principles of
-  imperative programming. He often repeated that he was trying to make Ruby a natural, but not simple language that reflects life."
+  ruby_info: "Ruby is a carefully balanced language. Its creator Yukihiro Matsumoto (also known as “Matz”), combined parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada and Lisp) to form a new language in which the functional programming paradigm is balanced by the principles of imperative programming. He often repeated that he was trying to make Ruby a natural, but not simple language that reflects life."
   quote1: 'Based on this, he adds:'
   quote2: "Ruby is simple in appearance, but very complex inside, like a human body."
   main: 'Home'
@@ -19,7 +18,7 @@ en:
   scores: 'Scores'
   useful_links: 'Useful links:'
   guide: 'for eduction'
-  login: 'Log In'
+  login: "Log In"
   confirmexit: 'Are you sure to exit?'
   english: 'UK'
   russian: 'RU'
@@ -31,7 +30,7 @@ en:
   sure: 'Do you want to exit?'
   response_codes: 'HTTP response codes'
   create_acc: 'Create an account?'
-  Task: 'correctly answer all questions on knowledge of HTTP response status codes'
+  task1: 'Task: correctly answer all questions on knowledge of HTTP response status codes'
   code301: 'Code 301 means...'
   url_moved: 'Requested URL moved'
   auth_req: 'Authentication required'
@@ -46,7 +45,7 @@ en:
   code500: 'The 500 code appears when...'
   code404: 'The 404 code appears when...'
   code401: 'Code 401 stands for...'
-  ruby_coding: 'Ruby Programming'
+  ruby_coding: 'Ruby Theory'
   test_list: 'List of tests'
   onthispage: 'On this page you can choose the testing you want to take'
   statuscode: 'HTTP response Statuses'
@@ -59,7 +58,7 @@ en:
   birth: 'Date of birth'
   again: 'Enter the password again'
   pass: 'Password'
-  email: 'email'
+  email: 'Email'
   deleted: 'The account has been deleted!'
   see_u: See you soon!
   delete_acc: 'Delete an account'
@@ -75,3 +74,36 @@ en:
   minlen: ': You missed the password field'
   birthempty: ': You missed the date of birth'
   young: ': Unacceptable age'
+  edit_profile: 'Edit Profile'
+  logout: "Log Out"
+  answer: "Check"
+
+  ror: "What is Ruby on Rails"
+  documents: "Documentation"
+  framework: "Framework made on Ruby"
+  consorcium: "Consorcium Ruby"
+  testing: "Testing app"
+  puma: "What is ... Puma?"
+  server: "App Server"
+  ide: "IDE for Ruby on Rails"
+  company: "Ruby rights owner company"
+  function: "Special function for pre-compile"
+  gemfile: "What is Gemfile?"
+  txtredaktor: "Text Editor that supports Ruby"
+  execfile: "Exec file for Ruby"
+  stylefile: "File with styles for HTML within"
+  filetrue: "File that contains current project's installed gems "
+  rootindex: "what does it mean: root home#index ?"
+  rootf1: "Path to gem index in Home folder "
+  rootf2: "Route to view index of controller Home"
+  rootf3: "require method index from gem Home"
+  rootf4: "Search for extension index made by Home.inc"
+  git: "What is Git?.."
+  raspred: "System of controlling project versions"
+  savepoint: "Savepoint"
+  tool: "Tool for compiling Ruby"
+  langg: "Counting library"
+  bundle: "What does command bundle make?"
+  project: "Creates project"
+  migrat: "Creates migration for database"
+  install: "Installing all gems to project"

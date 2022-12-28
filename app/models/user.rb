@@ -6,42 +6,38 @@ class User < ApplicationRecord
 
   validates :email, {
     presence: {
-      message: ': Вы пропустили поле для почты'
+      message: I18n.t(:emailempty)
     },
     uniqueness: {
-      message: ': Этот email уже занят'
+      message: I18n.t(:alreadyexists)
     },
     format: {
       with: /(?:[a-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/,
-      message: ': Некорректный адрес почты'
+      message: I18n.t(:invalidemail)
     }
   }
 
   validates :password, {
     presence: {
-      message: ': Вы пропустили поле для пароля'
+      message: I18n.t(:passempty)
     },
     length: {
       minimum: 8,
-      message: ': Минимальная длина пароля - 8 символов'
+      message: I18n.t(:minlen)
     }
   }
 
   validates :birth_date, {
     presence: {
-      message: ': Вы пропустили дату рождения'
+      message: I18n.t(:birthempty)
     },
     date: {
       after: Time.now - 100.year, before: Time.now - 14.year,
-      message: ': Недопустимый возраст'
+      message: I18n.t(:young)
     }
   }
 
   before_save :check_email
-
-  # def self.authenticate(login, pass)
-  #   User.find(:first, conditions: [':email = ? AND :password = ?', login, pass])
-  # end
 
   private
 

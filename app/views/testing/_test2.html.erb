@@ -1,37 +1,54 @@
-<%# <script src="Testing_plarform/lib/codemirror/lib/"></script>
-<link href="Testing_plarform/lib/codemirror/lib/codemirror.css" rel="stylesheet"/>
-<script src="Testing_plarform/lib/codemirror/mode/xml/xml.js"></script>
-<link href="Testing_plarform/lib/codemirror/theme/colorforth.css"/>
-<%=javascript_include_tag 'codemirror.js'%>
-<%= stylesheet_link_tag 'codemirror.css' %>
-
-<p>Задание №1: Вычислите сумму чисел от 1 до 10:</p>
-<div class="input-group col">
-  <span class="input-group-text">Ваш ответ</span>
-  <textarea style="width: 400px; height: 70px;"></textarea>
+<h5 style="color: white;"><%=t(:task1)%></h5>
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:ror)}
+  1) #{t(:documents)} 2) #{t(:framework)} 3) #{t(:testing)} 4) #{t(:consorcium)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 1", class: 'btn btn-success')%>
+<% end %>
 </div>
-<br>
-<p>Задание №1: Выведите сумму чисел от 1 до 10:</p>
-<div class="input-group">
-  <span class="input-group-text">Ваш ответ</span>
-  <textarea class="codemirror-textarea" style="width: 400px; height: 70px;"></textarea>
+
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:puma)}
+  1) #{t(:server)} 2) #{t(:ide)} 3) #{t(:function)} 4) #{t(:company)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 2", class: 'btn btn-success')%>
+<% end %>
 </div>
-<br>
-<p>Задание №1: Выведите сумму чисел от 1 до 10:</p>
-<div class="input-group">
-  <span class="input-group-text">Ваш ответ</span>
-  <textarea class="codemirror-textarea" style="width: 400px; height: 70px;"></textarea>
+
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:gemfile)}
+  1) #{t(:execfile)} 2) #{t(:txtredaktor)} 3) #{t(:stylefile)} 4) #{t(:filetrue)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 3", class: 'btn btn-success')%>
+<% end %>
 </div>
-<br>
 
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:rootindex)}
+  1) #{t(:rootf1)} 2) #{t(:rootf2)} 3) #{t(:rootf3)} 4) #{t(:rootf4)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 4", class: 'btn btn-success')%>
+<% end %>
+</div>
 
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:git)}
+  1) #{t(:raspred)} 2) #{t(:savepoint)} 3) #{t(:tool)} 4) #{t(:langg)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 5", class: 'btn btn-success')%>
+<% end %>
+</div>
 
-<%# 
-<textarea id="editor"><p>I'm a paragraph</p></textarea>
-<script>
-  var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
-    mode: 'xml',
-    theme: 'dracula',
-    lineNumber: true
-  });
-</script> %>
+<div class="row test_ask">
+<%= form_tag(:controller => 'testing', :action => 'set_score_test2') do %>
+  <%= label_tag(:ans, "#{t(:bundle)}
+  1) #{t(:project)} 2) #{t(:migrat)} 3) #{t(:install)} 4) #{t(:savepoint)}") %>
+  <%= select_tag(:ans, options_for_select([1, 2, 3, 4]), prompt: "Ваш ответ")%>
+<%= submit_tag("#{t(:answer)} 6", class: 'btn btn-success')%>
+<% end %>
+</div>

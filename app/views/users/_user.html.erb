@@ -10,10 +10,6 @@
         <td><%= user.email %></td>
       </tr>
       <tr>
-        <td><%=t(:pass)%>:</td>
-        <td><%= user.password_digest %></td>
-      </tr>
-      <tr>
         <td><%=t(:birth)%>:</td>
         <td><%= user.birth_date.strftime('%d %B %Yг') %></td>
       </tr>
